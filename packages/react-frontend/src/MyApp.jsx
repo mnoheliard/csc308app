@@ -8,7 +8,7 @@ function MyApp() {
 
   function removeOneCharacter(index) {
 	  const chartoDelete = characters[index];
-	  fetchDelete(chartoDelete.id)
+	  fetchDelete(chartoDelete._id)
 	    .then((res) => {
 	      if (res.status ==204) {
 		 const updated = characters.filter((character, i) => {
